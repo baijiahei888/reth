@@ -367,8 +367,7 @@ dependencies = [
 [[package]]
 name = "alloy-json-rpc"
 version = "1.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0b22b5e5872d5ece9df2411a65637af3bfc5ce868ddf392cb91ce9a0c7cb1b30"
+source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
 dependencies = [
  "alloy-primitives",
  "alloy-sol-types",
@@ -522,8 +521,7 @@ dependencies = [
 [[package]]
 name = "alloy-pubsub"
 version = "1.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "071721a7fbe5fa0b7e0391c4ff8b5919a9f9866944cd8608dcb893d846e7087d"
+source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
 dependencies = [
  "alloy-json-rpc",
  "alloy-primitives",
@@ -881,8 +879,7 @@ dependencies = [
 [[package]]
 name = "alloy-transport"
 version = "1.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1f5564661f166792da89d9a6785ff815e44853436637842c59ab48393c4c2fad"
+source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
 dependencies = [
  "alloy-json-rpc",
  "alloy-primitives",
@@ -904,8 +901,7 @@ dependencies = [
 [[package]]
 name = "alloy-transport-http"
 version = "1.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "14c2bba49856a38b54b9134f1fc218fc67d1b1313c16a310514f3b10110559fc"
+source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
 dependencies = [
  "alloy-json-rpc",
  "alloy-transport",
@@ -919,8 +915,7 @@ dependencies = [
 [[package]]
 name = "alloy-transport-ipc"
 version = "1.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e9d919bfc40fd92a628561a2053aa68a8e6a994cae65207a086d2672b4f13276"
+source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
 dependencies = [
  "alloy-json-rpc",
  "alloy-pubsub",
@@ -939,8 +934,7 @@ dependencies = [
 [[package]]
 name = "alloy-transport-ws"
 version = "1.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "802de53990270861acf00044837794ea2450ccc3d9795e824a5d865633241a23"
+source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
 dependencies = [
  "alloy-pubsub",
  "alloy-transport",

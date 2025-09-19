@@ -705,11 +705,11 @@ vergen-git2 = "1.0.5"
 # alloy-contract = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
 # alloy-eips = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
 # alloy-genesis = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
-# alloy-json-rpc = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
+ alloy-json-rpc = { git = "https://github.com/alloy-rs/alloy", tag = "v1.0.1" }
 # alloy-network = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
 # alloy-network-primitives = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
 # alloy-provider = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
-# alloy-pubsub = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
+ alloy-pubsub = { git = "https://github.com/alloy-rs/alloy", tag = "v1.0.1" }
 # alloy-rpc-client = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
 # alloy-rpc-types = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
 # alloy-rpc-types-admin = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
@@ -724,10 +724,10 @@ vergen-git2 = "1.0.5"
 # alloy-serde = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
 # alloy-signer = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
 # alloy-signer-local = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
-# alloy-transport = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
-# alloy-transport-http = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
-# alloy-transport-ipc = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
-# alloy-transport-ws = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
+ alloy-transport = { git = "https://github.com/alloy-rs/alloy", tag = "v1.0.1" }
+ alloy-transport-http = { git = "https://github.com/alloy-rs/alloy", tag = "v1.0.1" }
+ alloy-transport-ipc = { git = "https://github.com/alloy-rs/alloy", tag = "v1.0.1" }
+ alloy-transport-ws = { git = "https://github.com/alloy-rs/alloy", tag = "v1.0.1" }
 #
 # op-alloy-consensus = { git = "https://github.com/alloy-rs/op-alloy", rev = "ad607c1" }
 # op-alloy-network = { git = "https://github.com/alloy-rs/op-alloy", rev = "ad607c1" }
