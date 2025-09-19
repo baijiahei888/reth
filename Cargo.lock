@@ -367,7 +367,8 @@ dependencies = [
 [[package]]
 name = "alloy-json-rpc"
 version = "1.0.1"
-source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0b22b5e5872d5ece9df2411a65637af3bfc5ce868ddf392cb91ce9a0c7cb1b30"
 dependencies = [
  "alloy-primitives",
  "alloy-sol-types",
@@ -521,7 +522,8 @@ dependencies = [
 [[package]]
 name = "alloy-pubsub"
 version = "1.0.1"
-source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "071721a7fbe5fa0b7e0391c4ff8b5919a9f9866944cd8608dcb893d846e7087d"
 dependencies = [
  "alloy-json-rpc",
  "alloy-primitives",
@@ -879,7 +881,8 @@ dependencies = [
 [[package]]
 name = "alloy-transport"
 version = "1.0.1"
-source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1f5564661f166792da89d9a6785ff815e44853436637842c59ab48393c4c2fad"
 dependencies = [
  "alloy-json-rpc",
  "alloy-primitives",
@@ -901,7 +904,8 @@ dependencies = [
 [[package]]
 name = "alloy-transport-http"
 version = "1.0.1"
-source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "14c2bba49856a38b54b9134f1fc218fc67d1b1313c16a310514f3b10110559fc"
 dependencies = [
  "alloy-json-rpc",
  "alloy-transport",
@@ -915,7 +919,8 @@ dependencies = [
 [[package]]
 name = "alloy-transport-ipc"
 version = "1.0.1"
-source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e9d919bfc40fd92a628561a2053aa68a8e6a994cae65207a086d2672b4f13276"
 dependencies = [
  "alloy-json-rpc",
  "alloy-pubsub",
@@ -934,7 +939,8 @@ dependencies = [
 [[package]]
 name = "alloy-transport-ws"
 version = "1.0.1"
-source = "git+https://github.com/alloy-rs/alloy?tag=v1.0.1#5c6defe267955dfbc2c19568487e4538da7f24dd"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "802de53990270861acf00044837794ea2450ccc3d9795e824a5d865633241a23"
 dependencies = [
  "alloy-pubsub",
  "alloy-transport",
@@ -4511,6 +4517,7 @@ version = "0.1.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3c6995591a8f1380fcb4ba966a252a4b29188d51d2b89e3a252f5305be65aea8"
 dependencies = [
+ "base64 0.22.1",
  "bytes",
  "futures-channel",
  "futures-core",
@@ -4518,7 +4525,9 @@ dependencies = [
  "http",
  "http-body",
  "hyper",
+ "ipnet",
  "libc",
+ "percent-encoding",
  "pin-project-lite",
  "socket2 0.6.0",
  "tokio",
@@ -7135,8 +7144,9 @@ checksum = "ba39f3699c378cd8970968dcbff9c43159ea4cfbd88d43c00b22f2ef10a435d2"
 
 [[package]]
 name = "reqwest"
-version = "0.12.15"
-source = "git+https://github.com/seanmonstar/reqwest?tag=v0.12.15#54376c35dffb0fb2e79b430920a62363aee202c8"
+version = "0.12.23"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d429f34c8092b2d42c7c93cec323bb4adeb7c67698f70839adec842ec10c7ceb"
 dependencies = [
  "base64 0.22.1",
  "bytes",
@@ -7150,18 +7160,14 @@ dependencies = [
  "hyper-rustls",
  "hyper-tls",
  "hyper-util",
- "ipnet",
  "js-sys",
  "log",
- "mime",
  "native-tls",
- "once_cell",
  "percent-encoding",
  "pin-project-lite",
  "quinn",
  "rustls",
  "rustls-native-certs",
- "rustls-pemfile",
  "rustls-pki-types",
  "serde",
  "serde_json",
@@ -7172,14 +7178,14 @@ dependencies = [
  "tokio-rustls",
  "tokio-util",
  "tower",
+ "tower-http",
  "tower-service",
  "url",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "wasm-streams",
  "web-sys",
- "webpki-roots 0.26.11",
- "windows-registry",
+ "webpki-roots 1.0.2",
 ]
 
 [[package]]
@@ -11044,15 +11050,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "rustls-pemfile"
-version = "2.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dce314e5fee3f39953d46bb63bb8a46d40c2f8fb7cc5a3b6cab2bde9721d6e50"
-dependencies = [
- "rustls-pki-types",
-]
-
-[[package]]
 name = "rustls-pki-types"
 version = "1.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -13278,17 +13275,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "windows-registry"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4286ad90ddb45071efd1a66dfa43eb02dd0dfbae1545ad6cc3c51cf34d7e8ba3"
-dependencies = [
- "windows-result 0.3.4",
- "windows-strings 0.3.1",
- "windows-targets 0.53.3",
-]
-
-[[package]]
 name = "windows-result"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -13332,15 +13318,6 @@ checksum = "4cd9b125c486025df0eabcb585e62173c6c9eddcec5d117d3b6e8c30e2ee4d10"
 dependencies = [
  "windows-result 0.2.0",
  "windows-targets 0.52.6",
-]
-
-[[package]]
-name = "windows-strings"
-version = "0.3.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "87fa48cc5d406560701792be122a10132491cff9d0aeb23583cc2dcafc847319"
-dependencies = [
- "windows-link 0.1.3",
 ]
 
 [[package]]
