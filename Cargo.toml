@@ -495,7 +495,7 @@ alloy-serde = { version = "=1.0.1", default-features = false }
 alloy-signer = { version = "=1.0.1", default-features = false }
 alloy-signer-local = { version = "=1.0.1", default-features = false }
 alloy-transport = { version = "=1.0.1" }
-alloy-transport-http = { version = "=1.0.1", features = ["reqwest-rustls-tls"], default-features = false }
+alloy-transport-http = { version = "=1.0.1", default-features = false }
 alloy-transport-ipc = { version = "=1.0.1", default-features = false }
 alloy-transport-ws = { version = "=1.0.1", default-features = false }
 
