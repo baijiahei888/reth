@@ -494,10 +494,10 @@ alloy-rpc-types-txpool = { version = "=1.0.1", default-features = false }
 alloy-serde = { version = "=1.0.1", default-features = false }
 alloy-signer = { version = "=1.0.1", default-features = false }
 alloy-signer-local = { version = "=1.0.1", default-features = false }
-alloy-transport = { version = "=1.0.1" }
-alloy-transport-http = { version = "1.0.1", default-features = false }
-alloy-transport-ipc = { version = "=1.0.1", default-features = false }
-alloy-transport-ws = { version = "=1.0.1", default-features = false }
+alloy-transport = { version = "=1.0.1", default-features = true }
+alloy-transport-http = { version = "=1.0.1", default-features = true }
+alloy-transport-ipc = { version = "=1.0.1", default-features = true }
+alloy-transport-ws = { version = "=1.0.1", default-features = true }
 
 # op
 alloy-op-evm = { version = "=0.8.0", default-features = false }
