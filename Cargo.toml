@@ -710,7 +710,7 @@ vergen-git2 = "1.0.5"
 # alloy-network-primitives = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
 # alloy-provider = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
  alloy-pubsub = { git = "https://github.com/alloy-rs/alloy", tag = "v1.0.1" }
-# alloy-rpc-client = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
+ alloy-rpc-client = { git = "https://github.com/alloy-rs/alloy",  tag = "v1.0.1" }
 # alloy-rpc-types = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
 # alloy-rpc-types-admin = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
 # alloy-rpc-types-anvil = { git = "https://github.com/alloy-rs/alloy", branch = "main" }
