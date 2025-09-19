@@ -449,7 +449,7 @@ revm-bytecode = { version = "=4.0.0", default-features = false }
 revm-database = { version = "=4.0.0", default-features = false }
 revm-state = { version = "=4.0.0", default-features = false }
 revm-primitives = { version = "=19.0.0", default-features = false }
-revm-interpreter = { version = "=19.0.0", default-features = false }
+revm-interpreter = { version = "19.0.0", default-features = false }
 revm-inspector = { version = "=4.0.0", default-features = false }
 revm-context = { version = "=4.0.0", default-features = false }
 revm-context-interface = { version = "=4.0.0", default-features = false }
@@ -468,7 +468,7 @@ alloy-sol-macro = "=1.1.0"
 alloy-sol-types = { version = "=1.1.0", default-features = false }
 alloy-trie = { version = "=0.8.1", default-features = false }
 
-alloy-hardforks = {git="https://github.com/baijiahei888/hardforks.git",version = "=0.2.0"}
+alloy-hardforks = {git="https://github.com/baijiahei888/hardforks.git",version = "0.2.0"}
 #alloy-hardforks = "0.2.0"
 
 alloy-consensus = { version = "=1.0.1", default-features = false }
@@ -517,7 +517,7 @@ bincode = "1.3"
 bitflags = "2.4"
 blake3 = "1.5.5"
 boyer-moore-magiclen = "0.2.16"
-bytes = { version = "=1.5", default-features = false }
+bytes = { version = "1.5", default-features = false }
 cfg-if = "1.0"
 clap = "4"
 dashmap = "6.0"
@@ -534,16 +534,16 @@ linked_hash_set = "0.1"
 lz4 = "1.28.1"
 modular-bitfield = "0.11.2"
 notify = { version = "=8.0.0", default-features = false, features = ["macos_fsevent"] }
-nybbles = { version = "=0.3.0", default-features = false }
-once_cell = { version = "=1.19", default-features = false, features = ["critical-section"] }
+nybbles = { version = "=0.3.4",  default-features = false }
+once_cell = { version = "1.19", default-features = false, features = ["critical-section"] }
 parking_lot = "0.12"
 paste = "1.0"
 rand = "0.9"
 rayon = "1.7"
-rustc-hash = { version = "=2.0", default-features = false }
+rustc-hash = { version = "2.0", default-features = false }
 schnellru = "0.2"
-serde = { version = "=1.0", default-features = false }
-serde_json = { version = "=1.0", default-features = false, features = ["alloc"] }
+serde = { version = "=1.0.219", default-features = false }
+serde_json = { version = "=1.0.140", default-features = false, features = ["alloc"] }
 serde_with = { version = "=3", default-features = false, features = ["macros"] }
 sha2 = { version = "=0.10", default-features = false }
 shellexpand = "3.0.0"
@@ -551,16 +551,16 @@ smallvec = "1"
 strum = { version = "=0.27", default-features = false }
 strum_macros = "0.27"
 syn = "2.0"
-thiserror = { version = "=2.0.0", default-features = false }
+thiserror = { version = "2.0.0", default-features = false }
 tar = "0.4.44"
-tracing = { version = "=0.1.0", default-features = false }
+tracing = { version = "0.1.0", default-features = false }
 tracing-appender = "0.2"
-url = { version = "=2.3", default-features = false }
+url = { version = "2.3", default-features = false }
 zstd = "0.13"
 byteorder = "1"
 mini-moka = "0.10"
 tar-no-std = { version = "=0.3.2", default-features = false }
-miniz_oxide = { version = "=0.8.4", default-features = false }
+miniz_oxide = { version = "0.8.4", default-features = false }
 
 # metrics
 metrics = "0.24.0"
@@ -576,7 +576,7 @@ quote = "1.0"
 # tokio
 tokio = { version = "=1.44.2", default-features = false }
 tokio-stream = "0.1.11"
-tokio-util = { version = "=0.7.4", features = ["codec"] }
+tokio-util = { version = "0.7.4", features = ["codec"] }
 
 # async
 async-stream = "0.3"
@@ -736,8 +736,8 @@ vergen-git2 = "1.0.5"
 #
 # revm-inspectors = { git = "https://github.com/paradigmxyz/revm-inspectors", rev = "1207e33" }
 
-jsonrpsee = { git = "https://github.com/paradigmxyz/jsonrpsee", branch = "matt/make-rpc-service-pub" }
-jsonrpsee-core = { git = "https://github.com/paradigmxyz/jsonrpsee", branch = "matt/make-rpc-service-pub" }
-jsonrpsee-server = { git = "https://github.com/paradigmxyz/jsonrpsee", branch = "matt/make-rpc-service-pub" }
-jsonrpsee-http-client = { git = "https://github.com/paradigmxyz/jsonrpsee", branch = "matt/make-rpc-service-pub" }
-jsonrpsee-types = { git = "https://github.com/paradigmxyz/jsonrpsee", branch = "matt/make-rpc-service-pub" }
+jsonrpsee = { git = "https://github.com/paradigmxyz/jsonrpsee", branch = "matt/make-rpc-service-pub" , version = "=0.25.1" }
+jsonrpsee-core = { git = "https://github.com/paradigmxyz/jsonrpsee", branch = "matt/make-rpc-service-pub" , version = "=0.25.1" }
+jsonrpsee-server = { git = "https://github.com/paradigmxyz/jsonrpsee", branch = "matt/make-rpc-service-pub" , version = "=0.25.1" }
+jsonrpsee-http-client = { git = "https://github.com/paradigmxyz/jsonrpsee", branch = "matt/make-rpc-service-pub" , version = "=0.25.1" }
+jsonrpsee-types = { git = "https://github.com/paradigmxyz/jsonrpsee", branch = "matt/make-rpc-service-pub" , version = "=0.25.1" }
